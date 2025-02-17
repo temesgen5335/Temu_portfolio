@@ -1,7 +1,7 @@
 // pages/index.tsx
 import type { NextPage } from "next";
 import Layout from "../components/Layout";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/home/HeroSection";
 
 const Home: NextPage = () => {
   return (

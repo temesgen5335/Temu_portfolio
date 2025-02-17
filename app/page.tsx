@@ -1,9 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import Layout from "./components/Layout";
-import HeroSection from "./components/HeroSection";
+import HeroSection from "./components/home/HeroSection";
+import { ThemeContextProvider } from "./components/utils/ThemeContext"; // Import the context provider
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/layout/Footer";
+
 
 export default function Home() {
   return (
+    <ThemeContextProvider>
+
     <Layout>
       <HeroSection />
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -27,7 +35,7 @@ export default function Home() {
             <li>SAVE the trees dave the cat save the PLANET.</li>
           </ol>
 
-          <div className="flex gap-4 items-center flex-col sm:flex-row">
+            <div className="flex gap-4 items-center flex-col sm:flex-row">
             <a
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -40,5 +48,6 @@ export default function Home() {
         </main>
       </div>
     </Layout>
+    </ThemeContextProvider>
   );
 }

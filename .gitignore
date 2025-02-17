@@ -20,6 +20,10 @@
 # production
 /build
 
+#Assets
+app/assets/Images/
+app/components/ui/
+
 # misc
 .DS_Store
 *.pem
