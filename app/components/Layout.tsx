@@ -1,8 +1,8 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { ThemeContextProvider } from "./ThemeContext"; // Import your ThemeContext
-import Navbar from "./Navbar"; 
+import { ThemeContextProvider } from "./utils/ThemeContext"; // Import your ThemeContext
+import Navbar from "./layout/Navbar"; 
 import "../globals.css"; // Import Tailwind styles
 
 interface LayoutProps {
